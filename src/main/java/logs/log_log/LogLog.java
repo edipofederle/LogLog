@@ -1,4 +1,4 @@
-package logs.fifo_logs;
+package logs.log_log;
 
 import java.util.ArrayList;
 import java.util.List;

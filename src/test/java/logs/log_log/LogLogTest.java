@@ -1,9 +1,12 @@
-package logs.fifo_logs;
+package logs.log_log;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
+import logs.log_log.Listener;
+import logs.log_log.LogLog;
+import logs.log_log.LogLogData;
 
 import org.junit.After;
 import org.junit.Before;

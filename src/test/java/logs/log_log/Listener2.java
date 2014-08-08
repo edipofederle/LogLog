@@ -1,7 +1,7 @@
-package logs.fifo_logs;
+package logs.log_log;
 
-import logs.fifo_logs.LogLogData;
-import logs.fifo_logs.Listener;
+import logs.log_log.Listener;
+import logs.log_log.LogLogData;
 
 /**
  * 
