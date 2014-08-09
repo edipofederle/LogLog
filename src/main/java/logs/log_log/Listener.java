@@ -11,5 +11,5 @@ package logs.log_log;
  * </PRE>
  */
 public interface Listener {
-    public String message();
+    public void message();
 }
