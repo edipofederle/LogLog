@@ -3,12 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>logs</groupId>
-	<artifactId>lifo-logs</artifactId>
+	<artifactId>loglog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>lifo-logs</name>
-	<url>http://maven.apache.org</url>
+	<name>Log Log</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,4 +32,5 @@
 		</dependency>
 
 	</dependencies>
+	<url>https://github.com/edipofederle/</url>
 </project>
