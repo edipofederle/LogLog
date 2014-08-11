@@ -24,6 +24,14 @@ public class LogLogData {
     public static void addLog(String message) {
 	logs.add(message);
     }
+    
+    public static void addLog(String message, Level level) {
+	logs.add("["+level.getLevel()+"] - " + message);
+    }
+    
+    public static void addLog(String message, Level level, String obj) {
+	logs.add(obj + " | ["+level.getLevel()+"] - " + message);
+    }
 
     public static void clear() {
 	logs.clear();

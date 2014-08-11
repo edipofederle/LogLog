@@ -13,8 +13,27 @@ public class LogLog {
     private boolean autoFlush = true;
     private List<Listener> listeners = new ArrayList<Listener>();
     
+    /**
+     * Simple message.
+     * 
+     * @param message
+     */
     public void putLog(String message){
 	LogLogData.addLog(message);
+	
+	if(autoFlush)
+	    notifyListeners();
+    }
+    
+    public void putLog(String message, Level level){
+	LogLogData.addLog(message, level);
+	
+	if(autoFlush)
+	    notifyListeners();
+    }
+    
+    public void putLog(String message, Level level, String obj){
+	LogLogData.addLog(message, level, obj);
 	
 	if(autoFlush)
 	    notifyListeners();

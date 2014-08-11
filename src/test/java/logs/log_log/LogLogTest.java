@@ -85,4 +85,26 @@ public class LogLogTest {
 	
 	assertTrue("should be empty", LogLogData.getLogs().isEmpty());
     }
+    
+    @Test
+    public void logMessageWithLevel(){
+	
+	ll.addListner(new Listener1());
+	ll.autoFlush(false);
+	
+	ll.putLog("message here", Level.INFO);
+	
+	assertEquals("[INFO] - message here", LogLogData.printLog());
+    }
+    
+    @Test
+    public void logMessageWithLevelAndObj(){
+	
+	ll.addListner(new Listener1());
+	ll.autoFlush(false);
+	
+	ll.putLog("message here", Level.INFO, LogLogTest.class.getName());
+	
+	assertEquals("logs.log_log.LogLogTest | [INFO] - message here", LogLogData.printLog());
+    }
 }

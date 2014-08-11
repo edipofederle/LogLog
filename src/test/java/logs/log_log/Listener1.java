@@ -10,8 +10,8 @@ import logs.log_log.LogLogData;
  */
 public class Listener1 implements Listener {
 
-    public void message() {
-	System.out.println("["+LogLogData.printLog()+"]");
+    public String message() {
+	return ">>"+LogLogData.printLog();
     }
 
 }
