@@ -10,7 +10,7 @@ import logs.log_log.LogLogData;
  */
 public class Listener2 implements Listener {
 
-    public String message() {
-	return ">"+LogLogData.printLog();
+    public void message() {
+	System.out.println(">"+LogLogData.printLog());
     }
 }

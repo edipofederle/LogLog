@@ -5,11 +5,11 @@ package logs.log_log;
  *
  *Example of listener implementation
  *<PRE>
- *public String message() {
+ *public void message() {
  *	return "["+LogLogData.printLog()+"]";
  *}
  * </PRE>
  */
 public interface Listener {
-    public String message();
+    public void message();
 }
